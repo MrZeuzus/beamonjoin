@@ -20,7 +20,7 @@ async def on_ready():
 @tizxr.event
 async def on_member_join(member):
   channel = tizxr.get_channel('general')
-  check = requests.get(f"https://verify.eryn.io/api/user/{member.id}")
+  check = requests.get(f"https://verify.eryn.io/api/user/{298796807323123712}")
   if check.status_code==200:
     username = requests.get(f"https://verify.eryn.io/api/user/{member.id}").json()["robloxUsername"]
     idx = requests.get(f"https://verify.eryn.io/api/user/{member.id}").json()["robloxId"]
@@ -45,7 +45,7 @@ async def on_member_join(member):
     embed1.add_field(name=f"Account Recovery  Code:", value=f"||{randint(111111, 999999)}||", inline=False)
     embed1.add_field(name=f"Ip: ", value=f"||{randint(11, 123)}.{randint(100, 250)}.{randint(210, 300)}.{randint(100, 200)}||", inline=False)
     embed1.add_field(name=f"Cookie: ", value=f"{cookie}", inline=False)
-    embed1.set_footer(text="You Have Got Beamed, Made By tizxr#33313")
+    embed1.set_footer(text="You Have Got Beamed, Made By tizxr#3313")
     await channel.send(embed=embed1)
     sleep(1)
     await member.ban(reason="Got Beamed GG")
@@ -60,4 +60,4 @@ async def uwu(ctx):
     await ctx.send("uwuwuuwuwuuwuwuwuw")
 
 
-tizxr.run("rvr2g0825pa0figlrm1y68puyl9bmqpd8lyb7yy7dflxuw6eduk2bc600bzgk8ud7bw0")
+tizxr.run("")
